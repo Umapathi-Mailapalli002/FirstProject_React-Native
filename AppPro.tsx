@@ -5,20 +5,19 @@ import { SafeAreaView, StyleSheet, Text, useColorScheme, View } from "react-nati
 function AppPro(): JSX.Element{
     const isDarkMode = useColorScheme() === "dark";
     return (
-        <SafeAreaView>
             <View style={styles.container}>
                 <Text style={isDarkMode ? styles.whiteText : styles.blackText}>
                     This is My world
                 </Text>
             </View>
-        </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: "center"
+        alignItems: "center",
+        justifyContent: "center"
     },
     whiteText: {
         color: "#ffffff"
